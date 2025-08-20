@@ -14,11 +14,11 @@
             {{-- Header card, menampilkan judul daftar produk. --}}
         </div>
         <div class="card-body">
-            <img src="https://placehold.co/600x400" class="img-fluid" alt="...">
+            <img src="https://placehold.co/600x400" class="img-fluid" alt="..."> {{-- placeholder image --}}
             <p>Nama Produk : {{ $produk->nama_produk }} </p>
             <p>Harga : Rp.{{ $produk->harga }} </p>
             <p>Deskripsi : {{ $produk->deskripsi_produk }}</p>
-            <p>Kategori : Barang Elektronik</p>
+            <p>Kategori : Barang Elektronik</p> 
             <p>Stok : Tersedia 7</p>
             <a href="/product" type="button" class="btn btn-primary">Kembali Ke Product</a>
         </div>

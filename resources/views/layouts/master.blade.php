@@ -18,7 +18,7 @@
 
 {{-- Isi konten --}}
 
-<div class="containter mt-3">
+<div class="container mt-3">
      {{-- -isi konten--}}
      @yield('content')
 </div>   

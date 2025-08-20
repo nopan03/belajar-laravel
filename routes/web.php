@@ -30,6 +30,12 @@ Route::view('/contact', 'pages.contact');// Membuat route GET ke '/contact', lan
 
 // Rekomendasi urutan
 Route::get('/product', [ProdukController::class, 'index']);
+
 Route::get('/product/create', [ProdukController::class, 'create']);
-Route::post('/product', [ProdukController::class, 'store']);
-Route::get('/product/{id}', [ProdukController::class, 'show']); // Ini terakhir
+Route::post('/product', [ProdukController::class, 'store']); //menyimpan data produk
+Route::get('/product/{id}', [ProdukController::class, 'show']); //menampilkan detail produk
+
+Route::get('/product/{id}/edit', [ProdukController::class, 'edit']); //menampilkan form edit produk
+Route::put('/product/{id}', [ProdukController::class, 'update']); //memperbarui data produk
+
+Route::delete('/product/{id}', [ProdukController::class, 'destroy']); //menghapus data produk
